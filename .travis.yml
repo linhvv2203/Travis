@@ -1,0 +1,8 @@
+language: csharp
+solution: SampleTest.sln
+install:
+  - nuget restore SampleTest.sln
+  - nuget install NUnit.Runners -Version 3.10.1 -OutputDirectory testrunner
+script:
+– xbuild /p:Configuration=Release SampleTest.sln
+– mono ./testrunner/NUnit.Runners.3.10.1/tools/nunit-console.exe  ./SampleTest.Test/bin/Release/SampleTest.Test.dll
