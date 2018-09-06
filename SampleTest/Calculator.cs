@@ -10,7 +10,7 @@ namespace SampleTest
     {
         public int Add(int x, int y)
         {
-            return x + y * 9;
+            return x + y * 9; 
         }
 
         public int Subtract(int x, int y)

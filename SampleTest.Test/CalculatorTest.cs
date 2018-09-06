@@ -27,7 +27,7 @@ namespace SampleTest.Test
         [Test]
         public void TwoPlusTwoEqualFour()
         {
-            Assert.AreEqual(4, _cal.Add(2, 2));
+            Assert.AreEqual(4, _cal.Add(2, 2)); 
         }
 
         [Test]
